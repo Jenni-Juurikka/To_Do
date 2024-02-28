@@ -1,0 +1,53 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+}
+
+aside {
+	width: 50%;
+	margin: auto;
+}
+
+input[type="text"] {
+	padding: 5px;
+	border: 2px solid gray;
+	border-radius: 10px;
+}
+
+i {
+	color: #A84343;
+	display: inline;
+}
+
+input[type="button"] {
+	background-color: #67C781;
+	margin-left: 5px;
+	padding: 5px;
+	border: 2px solid gray;
+	border-radius: 10px;
+}
+
+ol li {
+	/*list-style-type: none;*/
+	text-decoration: none;
+	text-align: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+select {
+	padding: 10px;
+	border-top: 1px solid brown;
+	border-bottom: 1px solid brown;
+	border-right: none;
+	border-left: none;
+	width: 200px;
+}
+
+#savedLists i {
+	float: right;
+}

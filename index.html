@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>To Do -lista</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/todo.js"></script>
+		<script src="https://kit.fontawesome.com/5003745c7f.js" crossorigin="anonymous"></script>
+	</head>
+	<body onload="printExistingLists()">
+		<aside>
+			<div>
+				<form>
+					<input required type="text" id="taskInput" name="taskInput" placeholder="Add new task" maxlength="30" autofocus>
+					<input type="button" id="addTask" name="addTask" value="Add task" onclick="addItemToList()">
+					<input type="button" id="saveButton" name="saveButton" value="Save" onclick="saveList()"><br>
+					<input type="text" id="listTitle" name="listTitle" placeholder="List name" maxlength="30" required>
+				</form>
+			</div>
+			<div>
+				<h2>Nykyinen lista</h2>
+				<ol id="taskList">
+				</ol>
+			</div>
+		</aside>
+		<aside>
+			<h2>Tallenetut listat</h2>
+			<ul id="savedLists">
+			</ul>
+		</aside>
+	</body>
+</html>
